@@ -1,0 +1,103 @@
+:root {
+  --primary-font: "SpaceMono", sans-serif;
+  --bold-font-weight: 700;
+  --formInputFontSize: 1.5rem;
+}
+
+@font-face {
+  font-family: "SpaceMono";
+  src: url("../fonts/SpaceMono-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+#form .form-group .bill-input-container,
+input[type="number"] {
+  color: var(--very-dark-cyan);
+  font-family: var(--primary-font);
+  font-size: var(--formInputFontSize);
+  font-weight: var(--bold-font-weight);
+  line-height: 2.25rem;
+  letter-spacing: 0rem;
+}
+
+#form label {
+  color: var(--dark-grayish-cyan);
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-weight: var(--bold-font-weight);
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+}
+
+#form .tip-container .tip-btn {
+  color: var(--white);
+  background-color: var(--very-dark-cyan);
+  font-family: var(--primary-font);
+  font-size: var(--formInputFontSize);
+  font-weight: var(--bold-font-weight);
+  line-height: 2.25rem;
+}
+
+#form .tip-container input[type="number"] {
+  background: rgb(243, 249, 250);
+  text-align: right;
+  color: var(--very-dark-cyan);
+  font-family: var(--primary-font);
+  font-size: var(--formInputFontSize);
+  font-weight: var(--bold-font-weight);
+  line-height: 2.25rem;
+  letter-spacing: 0rem;
+}
+
+#form .tip-container input[type="number"]::placeholder {
+  color: var(--dark-grayish-cyan);
+  font-family: var(--primary-font);
+  font-size: 1.5rem;
+  font-weight: var(--bold-font-weight);
+  line-height: 2.25rem;
+  letter-spacing: 0rem;
+  text-align: right;
+}
+
+.total-container h3 {
+  color: var(--white);
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-weight: var(--bold-font-weight);
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+}
+
+.total-container p {
+  color: var(--grayish-cyan);
+  font-family: var(--primary-font);
+  font-size: 0.81rem;
+  font-weight: var(--bold-font-weight);
+  line-height: 1.19rem;
+  letter-spacing: 0rem;
+}
+
+.total-container .complete-total-amount,
+.total-container .tip-amount-total {
+  color: rgb(38, 194, 174);
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.94rem;
+  letter-spacing: -0.04rem;
+}
+
+.total-container button {
+  border: none;
+  border-radius: 0.31rem;
+  background: var(--strong-cyan);
+  color: rgb(0, 71, 75);
+  font-family: var(--primary-font);
+  font-size: 1.25rem;
+  font-weight: var(--bold-font-weight);
+  line-height: 1.88rem;
+  letter-spacing: 0rem;
+  text-align: center;
+  text-transform: uppercase;
+}

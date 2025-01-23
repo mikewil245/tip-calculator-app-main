@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tip calculator app" />
+    <meta name="keywords" content="tip, calculator, app, frontend mentor" />
+    <meta name="author" content="Your Name Here" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/typography.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./images/logo.svg" alt="logo" />
+    </header>
+    <main>
+      <form action="#" id="form">
+        <div class="form-group">
+          <label for="bill">Bill</label>
+          <div class="bill-input-container">
+            <input
+              type="number"
+              class="bill-input"
+              name="bill"
+              placeholder="0"
+              aria-label="Bill amount"
+            />
+            <div class="dolla-logo">
+              <img src="./images/icon-dollar.svg" alt="icon-dollar" />
+            </div>
+          </div>
+        </div>
+        <label for="tip-percentage">Select tip %</label>
+        <section class="tip-container">
+          <button class="tip-btn" value="5" type="button">5%</button>
+          <button class="tip-btn" value="10" type="button">10%</button>
+          <button class="tip-btn" value="15" type="button">15%</button>
+          <button class="tip-btn" value="25" type="button">25%</button>
+          <button class="tip-btn" value="50" type="button">50%</button>
+          <input
+            type="number"
+            class="tip-btn"
+            value=""
+            id="custom-tip"
+            name="custom-tip"
+            placeholder="Custom"
+            aria-label="Custom tip percentage"
+          />
+        </section>
+        <label for="num-of-people"
+          ><div>Number of People</div>
+          <div class="error-message hidden">Can't be zero</div>
+        </label>
+        <section class="num-of-people-container">
+          <input
+            type="number"
+            class="num-of-people-input"
+            name="num-of-people"
+            id="num-of-people"
+            placeholder="0"
+            aria-label="Number of people"
+          />
+          <img
+            src="./images/icon-person.svg"
+            class="icon-person-logo"
+            alt="icon-person"
+          />
+        </section>
+      </form>
+      <div class="wrapper">
+        <div class="total-container">
+          <div class="tip-total-container">
+            <div class="tip-amount-text">
+              <h3>Tip Amount</h3>
+              <p>/ person</p>
+            </div>
+            <div class="tip-amount-total">$0.00</div>
+          </div>
+          <div class="complete-total-amount-container">
+            <div class="total-amount-container">
+              <div class="total-amount-text">
+                <h3>Total</h3>
+                <p>/ person</p>
+              </div>
+              <div class="complete-total-amount">$0.00</div>
+            </div>
+          </div>
+          <button class="reset-button">Reset</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- 
+
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+
+ <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+-->

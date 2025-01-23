@@ -1,0 +1,178 @@
+@import url("reset.css");
+@import url("colors.css");
+@import url("typography.css");
+
+body {
+  background: #c5e4e7;
+}
+
+header .logo {
+  width: 5.42rem;
+  height: 3.32rem;
+  margin: auto;
+  margin-top: 3.125rem;
+  margin-bottom: 2.5rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 58rem;
+  padding: 2rem;
+
+  background-color: var(--white);
+  padding-bottom: 2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+#form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.total-container {
+  padding: 1.5rem;
+  border-radius: 0.94rem;
+}
+
+main .bill-input-container,
+main .tip-container {
+  margin-bottom: 2rem;
+}
+
+#form .form-group .bill-input-container,
+#form .num-of-people-container {
+  position: relative;
+}
+
+#form .form-group .bill-input-container input[type="number"],
+#form .num-of-people-container input[type="number"] {
+  width: 100%;
+}
+
+.error-message {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  color: var(--ErrorColor);
+}
+
+.error-outline {
+  border: 2px solid red;
+  border-radius: 0.31rem;
+}
+
+#form .form-group .bill-input,
+#form .num-of-people-input {
+  appearance: none;
+  background: var(--very-light-grayish-cyan);
+  border-radius: 0.31rem;
+  border: none;
+  text-align: end;
+  display: block;
+  padding: 0.375rem;
+}
+
+#form .form-group .bill-input-container .dolla-logo img {
+  width: 0.62rem;
+  height: 0.97rem;
+}
+
+#form .num-of-people-container .icon-person-logo {
+  width: 0.62rem;
+  height: 0.97rem;
+}
+
+#form .form-group .bill-input-container .dolla-logo,
+#form .num-of-people-container .icon-person-logo {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(0, -50%);
+}
+
+main .tip-container .tip-btn {
+  border: none;
+  border-radius: 0.31rem;
+}
+
+main .tip-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: 3rem 3rem;
+  gap: 1rem;
+}
+
+#form .tip-container .tip-btn {
+  transition: background-color 0.3s ease-in-out;
+}
+
+#form .tip-container .tip-btn:hover {
+  background-color: var(--strong-cyan);
+  cursor: pointer;
+}
+
+main .total-container {
+  background-color: var(--very-dark-cyan);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+main .total-container .tip-total-container,
+main .total-container .total-amount-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-container button {
+  padding: 0.56rem 2rem;
+  width: 100%;
+  margin-top: auto;
+}
+
+/*Javascript styles*/
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 475px) {
+  main .tip-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: 3rem 3rem 3rem;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  #form .num-of-people-container {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  main .wrapper {
+    display: grid;
+  }
+
+  main .wrapper .total-container {
+    grid-row: 1 / 2;
+  }
+}
